@@ -7,10 +7,21 @@
 </head>
 <body>
     <h1>Exercicio 03</h1>
-    <p>Exibir números de 10 a 200</p>
+    <p>Exibir a sequência do menor para o maior número que o usuário digitou</p>
     <script>
-        for(let i = 10; i<=200; i++){
-            console.log('o número:' + i)
+        let numero1 = prompt('Digite o primeiro número: ')
+        let numero2 = prompt('Digite o segundo número: ')
+
+        if (numero1 < numero2) {
+            while(numero1 <= numero2) {
+            console.log(`número: ${numero1}`)
+            numero1++  
+        }
+        } else {
+            while(numero2 <= numero1){
+            console.log(`número: ${numero2}`)
+            numero2++
+        }
         }
     </script>
 </body>
